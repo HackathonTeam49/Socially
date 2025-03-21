@@ -1,0 +1,98 @@
+.bg-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+  
+.bg-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+  
+/* Desktop Background */
+.desktop-bg {
+    display: block;
+}
+  
+
+.mobile-bg {
+    display: none;
+}
+  
+/***** Mobile-specific styles *****/
+@media (max-width: 480px) {
+  .bg-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .desktop-bg {
+      display: none; 
+    }
+  
+ .mobile-bg {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      max-width: 80%;
+      display: flex
+      ;
+          align-items: center;
+          text-align: center;
+          justify-items: center;
+          justify-content: center;
+  }
+  
+  .mobile-bg-image {
+      width: 149px;
+      height: 118px;
+      top: 176px;
+      left: 122px;
+      
+      object-fit: cover; 
+  }
+  
+
+
+    
+
+
+  .bub-up {
+    position: fixed;
+        top: -20px;
+        left: -20px;
+
+
+
+      width: 40%; 
+      height: auto;
+      object-fit: contain;
+      z-index: 1; 
+    }
+  
+    .bub-d {
+      position: fixed;
+      bottom: -20px;
+      right: -20px;
+      width: 40%; 
+      height: auto;
+      object-fit: contain;
+      z-index: 1; 
+    } 
+
+
+  
+    .bg-line {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+      z-index: 1; 
+    }
+}
+
+
+

@@ -1,0 +1,23 @@
+
+{
+    "root": true,
+    "env": {
+      "browser": true,
+      "node": true
+    },
+    "extends": "eslint:recommended",
+    "parserOptions": {
+      "ecmaVersion": 2020,
+      "sourceType": "module"
+    },
+    "rules": {
+
+        "no-debugger": "error", 
+        "no-unused-vars": ["error", { "varsIgnorePattern": "^[A-Z_]" }], 
+        "react/prop-types": "error", 
+        "react/jsx-no-undef": "error" 
+      }
+}
+    
+
+  

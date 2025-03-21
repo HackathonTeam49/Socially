@@ -1,0 +1,39 @@
+.custom-button {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 10px;
+    cursor: pointer;
+  font-family: Merriweather;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+  
+.regular-btn {
+    background-color: var(--blue-color);
+    color: var(--background-color);
+    border: none;
+}
+  
+.volunteer-btn {
+    background-color: var(--background-color);
+    color: var(--black-color);
+    border: 1px solid var(--blue-color);
+}
+.volunteer-btn:hover {
+    background-color: var(--background-color);
+}
+
+/******* Mobile-specific styles  ***********/
+  
+@media (max-width: 480px) {
+    .custom-button {
+      width: 100%;
+      padding: 15px;
+      font-size: 16px;
+      margin: 8px 0;
+    }
+  }
