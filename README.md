@@ -1,12 +1,76 @@
-# React + Vite
+# Made with React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Socially App
 
-Currently, two official plugins are available:
+A React-based web app for the Socially platform, allowing users to choose between creating a regular or volunteer account. This project includes responsive design for both desktop and mobile views, with routing to navigate between the Welcome, Register, and Volunteer pages.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## Expanding the ESLint configuration
+- _Responsive Design_: Adapts to desktop and mobile screens (mobile view optimized for max-width 480px).
+- _Routing_: Uses react-router-dom for navigation between pages (/socially, /socially/register, /socially/volunteer).
+- _Reusable Components_: Includes reusable Bg and Button components for consistent UI across pages.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Project Structure
+
+# Reusable background :
+
+src/ components/ Bg.jsx
+
+# Styles for the Bg:
+
+component Bg.css
+
+# Reusable button component:
+
+component Button.jsx
+
+# Styles for the Button component pages/ :
+
+Button.css
+
+# Welcome page with account selection:
+
+Welcome.jsx
+
+# Styles for the Welcome page:
+
+Welcome.css
+
+# Register page for regular accounts:
+
+Register.jsx (To be edit, create a div that houses the left background and the create account page, then import the reusable background )
+
+# Register page for volunteer accounts:
+
+Volunteer.jsx
+
+# Images for desktop and mobile views
+
+assets/
+
+# Main app:
+
+App.jsx
+
+with routing App.css
+
+# Global styles index.js
+
+# Entry point index.css
+
+# Minimal global styles
+
+# Setup Instructions
+
+1. Clone the Repository:
+   BASH
+   git clone https://github.com/organization-name/repository-name.git
+   cd repository-name
+2. Install Dependencies:
+   BASH
+   npm install (if it throws error use npm install --force)
+3. Run the App:
+   BASH
+   npm run dev
+   The app will start on http : // localhost: 3000. Access
+   App. jsx.

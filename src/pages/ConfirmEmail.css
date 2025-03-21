@@ -1,0 +1,138 @@
+.confirm-email-container {
+  display: flex;
+  margin: 100px auto 50px auto;
+  border-radius: 10px;
+  overflow: hidden;
+  width: 1180px;
+  max-width: 90%;
+  gap: 90px;
+  /* display: flex;
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  height: calc(100vh + env(safe-area-inset-top));
+  border-radius: 0;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0; */
+}
+
+.confirm-email-left {
+  flex: 1;
+}
+
+.confirm-email-right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--background-color);
+  padding: 20px;
+}
+
+.confirm-email-right h1 {
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+.confirm-email-right p {
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.code-inputs {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 45px;
+}
+
+.code-input {
+  width: 70px;
+  height: 100px;
+  text-align: center;
+  font-size: 16px;
+  border: 1px solid var(--black-color);
+  border-radius: 5px;
+}
+
+.sign-up-button {
+  width: 100%;
+  /* other styles... */
+}
+
+/******* Mobile-specific styles  ***********/
+
+@media (max-width: 480px) {
+  .confirm-email-container {
+    width: 100%;
+
+    border-radius: 0;
+    max-width: 92%;
+    margin: 0px;
+    gap: 0px;
+    justify-content: center;
+    overflow: visible;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: -45px;
+  }
+
+  .confirm-email-left {
+    flex: none;
+    width: 100%;
+
+    position: relative;
+  }
+
+  .confirm-email-right {
+    flex: none;
+    width: 100%;
+    padding: 20px;
+    height: 100%;
+    background-color: var(--background-color);
+    position: relative;
+  }
+
+  .confirm-email-right h1 {
+    margin-bottom: 15px;
+
+    font-family: Roboto;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .confirm-email-right p {
+    font-size: 14px;
+    margin-bottom: 45px;
+    font-family: Merriweather;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .code-inputs {
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 45px;
+  }
+
+  .code-input {
+    width: 50px;
+    height: 70px;
+    font-size: 14px;
+    border: 1px solid var(--black-color);
+    border-radius: 10px;
+  }
+}

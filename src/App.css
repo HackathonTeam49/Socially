@@ -1,15 +1,13 @@
-
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-  
-body {
 
+body {
   font-family: Arial, sans-serif;
 }
-  
+
 .App {
   padding-top: 100px;
 
@@ -17,15 +15,12 @@ body {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-
 }
-
-
 
 /* **Mobile-specific styles * */
 @media (max-width: 480px) {
-  .App{
-    width:100%;
+  .App {
+    width: 100%;
     padding-top: unset;
     position: unset;
     top: unset;
@@ -33,9 +28,5 @@ body {
     transform: unset;
     display: flex;
     justify-content: center;
-
-
- 
-  }    
-
+  }
 }
