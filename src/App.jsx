@@ -1,4 +1,3 @@
-// src/App.jsx
 import React, { Suspense } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import { AuthProvider } from "./contexts/FakeAuthContext";

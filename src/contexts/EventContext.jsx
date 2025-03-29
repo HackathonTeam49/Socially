@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { EventContext } from "./EventContextDefinition";
-import { v4 as uuidv4 } from "uuid"; // Import UUID
+import { v4 as uuidv4 } from "uuid"; // Import UUID used it to created id for each created events
 
 export const EventProvider = ({ children }) => {
   const [events, setEvents] = useState(() => {
