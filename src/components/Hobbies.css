@@ -1,0 +1,188 @@
+section.hobbies {
+  margin-bottom: 70px;
+}
+
+section.hobbies .h-h {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--black-color);
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+section .h-h h1 {
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+section .h-h p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  max-width: 557px;
+  color: #666666;
+}
+
+section.hobbies .container {
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  gap: 20px;
+}
+
+section.hobbies .hobbies-h img {
+  display: none;
+}
+
+section.hobbies .h-img {
+  background-color: #f5f5f5;
+  width: 345px;
+  height: 204px;
+  border-radius: 30px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+section.hobbies .h-m-details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  padding: 10px 20px 0px 0px;
+}
+
+section.hobbies .hobby-name {
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+section.hobbies .price {
+  font-family: Merriweather;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: right;
+  color: #00000080;
+}
+
+section.hobbies .price span.to-start {
+  display: none;
+}
+
+section.hobbies Button {
+  width: 81px;
+  height: 34px;
+  border-radius: 20px;
+  padding: 9px 25px 9px 25px;
+  float: right;
+  gap: 10px;
+  color: var(--background-color);
+  background-color: var(--blue-color);
+}
+
+@media (max-width: 480px) {
+  section.hobbies .hobbies-h img {
+    display: block;
+  }
+
+  section.hobbies .hobbies-h {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+
+  section.hobbies img.refresh {
+    margin-top: 1px;
+    width: 20px;
+    height: 20px;
+  }
+
+  section.hobbies .refresh {
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  section.hobbies .refresh.spin {
+    animation: spin 1s linear;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  section.hobbies .h-h h1 {
+    font-size: 20px;
+  }
+
+  section .h-h p {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    max-width: 357px;
+  }
+
+  section.hobbies .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, auto);
+    width: 100%;
+  }
+
+  section.hobbies .h-m-details {
+    flex-direction: column;
+    gap: 3px;
+  }
+  section.hobbies .hobby-name {
+    font-size: 18px;
+  }
+
+  section.hobbies .price-details {
+    width: 100%;
+  }
+  section.hobbies .price {
+    font-family: Merriweather;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: left;
+  }
+
+  section.hobbies .price span.to-start {
+    display: inline-block;
+  }
+
+  section.hobbies .h-img {
+    width: 166px;
+    height: 140px;
+    border-radius: 20px;
+  }
+
+  section.hobbies img.hobby-img {
+    width: 116px;
+    height: 116px;
+  }
+}

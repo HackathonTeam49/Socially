@@ -24,8 +24,21 @@
   border: 1px solid var(--blue-color);
 }
 .volunteer-btn:hover {
-  background-color: var(--background-color);
+  background-color: var(--blue-color);
+  color: var(--background-color);
+  border: 1px solid var(--blue-color);
 }
+
+/* .regular-btn:hover {
+  background-color: var(--background-color);
+  color: var(--black-color);
+  border: 1px solid var(--blue-color);
+} */
+/* .volunteer-btn:hover ~ .regular-btn {
+  background-color: var(--background-color);
+  color: var(--black-color);
+  border: 1px solid var(--blue-color);
+} */
 
 /******* Mobile-specific styles  ***********/
 

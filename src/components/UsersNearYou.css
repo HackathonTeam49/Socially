@@ -1,0 +1,228 @@
+section.users-near-you {
+  width: 1440px;
+  max-width: 96%;
+  margin: auto;
+  padding: 60px 27px 60px 27px;
+  border-radius: 20px;
+  margin-bottom: 90px;
+
+  background: linear-gradient(91.84deg, #003366 0.65%, #66b2ff 145.68%);
+}
+
+section .user-ny-h1-p {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  color: var(--background-color);
+  gap: 10px;
+  margin-bottom: 50px;
+  margin: top 30px;
+}
+section .user-ny-h1-p h1 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+section .user-ny-h1-p p {
+  max-width: 42%;
+  color: #ffffffbf;
+
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+/* .container {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+section.users-near-you .container {
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-gap: 20px;
+  justify-items: center;
+  align-items: center;
+  row-gap: 50px;
+  padding: 0px;
+}
+
+section.users-near-you .item {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+section.users-near-you .item:nth-child(n + 7) {
+  grid-column: span 1;
+  margin-left: -200px;
+}
+
+section.users-near-you .item:nth-child(7) {
+  grid-column: 2;
+}
+
+section.users-near-you .item:nth-child(8) {
+  grid-column: 3;
+}
+
+section.users-near-you .item:nth-child(9) {
+  grid-column: 4;
+}
+
+section.users-near-you .item:nth-child(10) {
+  grid-column: 5;
+}
+
+section.users-near-you .item:nth-child(11) {
+  grid-column: 6;
+}
+section .user-ny-details {
+  position: relative;
+}
+section .user-ny .dp-img {
+  width: 100px;
+  height: 100px;
+  left: 41px;
+  border-width: 3px;
+}
+section .user-ny .status-img {
+  position: absolute;
+  top: 80px;
+  right: 11px;
+}
+section.users-near-you h2 {
+  font-family: Merriweather;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 6%;
+  text-align: center;
+  color: #d6d4d4;
+}
+
+section.users-near-you h3 {
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 1.2px;
+  text-align: center;
+  color: var(--background-color);
+}
+@media (max-width: 480px) {
+  section.users-near-you .container {
+    max-width: 100%; /* Keep this to ensure it spans the viewport */
+    /* Slightly reduce width to allow margins for centering */
+    margin: 0 auto; /* Center the container horizontally */
+    display: grid;
+    grid-template-rows: repeat(3, 174px);
+    grid-template-columns: repeat(2, 163px);
+    grid-auto-columns: 100%;
+    grid-auto-flow: column;
+    grid-gap: 20px;
+    overflow-y: unset;
+    overflow-x: scroll;
+    row-gap: 0px;
+  }
+  section.users-near-you .item {
+    max-width: 163px; /* Match the grid column width instead of 50% */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  section .user-ny-h1-p p {
+    max-width: 100%;
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  section .user-ny-h1-p {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: var(--background-color);
+    gap: 10px;
+    margin-bottom: 10px;
+    margin: top 30px;
+  }
+
+  section.users-near-you h2 {
+    font-family: Merriweather;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 6%;
+    text-align: center;
+  }
+
+  section.users-near-you h3 {
+    font-family: Merriweather;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  section.users-near-you .item {
+    gap: 4px;
+    padding-top: 30px;
+  }
+  section .user-ny .dp-img {
+    width: 75px;
+    height: 75px;
+    border-width: 3px;
+  }
+
+  section .user-ny .status-img {
+    position: absolute;
+    top: 62px;
+    right: 11px;
+    width: 11.5px;
+    height: 11.5px;
+  }
+
+  /* Simplify the nth-child rules if possible */
+  section.users-near-you .item:nth-child(n + 7) {
+    grid-column: auto;
+    margin-left: 0;
+  }
+
+  section.users-near-you .item:nth-child(7) {
+    grid-column: auto; /* Reset to default behavior */
+  }
+
+  section.users-near-you .item:nth-child(8) {
+    grid-column: auto;
+  }
+
+  section.users-near-you .item:nth-child(9) {
+    grid-column: auto;
+  }
+
+  section.users-near-you .item:nth-child(10) {
+    grid-column: auto;
+  }
+
+  section.users-near-you .item:nth-child(11) {
+    grid-column: auto;
+  }
+}

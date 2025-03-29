@@ -68,9 +68,10 @@ with routing App.css
    cd repository-name
 2. Install Dependencies:
    BASH
-   npm install (if it throws error use npm install --force)
+   npm install (if it throws error use npm install --legacy-peer-deps)
 3. Run the App:
    BASH
    npm run dev
    The app will start on http : // localhost: 3000. Access
    App. jsx.
+4. i installed uuid via npm install uuid (if it throws error use npm install uuid --legacy-peer-deps)

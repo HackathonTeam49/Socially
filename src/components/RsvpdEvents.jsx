@@ -1,16 +1,16 @@
 import React from "react";
-import "./CreatedEvents.css";
+import { useEvents } from "../contexts/UseEvents";
+import "./RsvpdEvents.css";
 import eventImg from "../assets/event-img2.png";
 import Button from "./Button";
-import { useEvents } from "../contexts/UseEvents";
 import calendarIcon from "../assets/calendar.png";
 import clockIcon from "../assets/clock.png";
 import moneyIcon from "../assets/money.png";
 
-function CreatedEvents() {
-  const { events } = useEvents();
+function RsvpdEvents() {
+  const { events, rsvpdEvents } = useEvents();
 
-  // The Defined 4 static placeholder events(i made it 7 so the you will see how the scroll will be)then when there is an event it chnages the default event one by one
+  // Placeholder events (shown only if no RSVP yet)
   const placeholderEvents = Array(20).fill({
     title: "GROUP THERAPY",
     subtitle: "WILLIAM SMITH THERAPY MEET",
@@ -21,17 +21,24 @@ function CreatedEvents() {
     eventImage: eventImg,
   });
 
-  const displayEvents = events.length > 0 ? events : placeholderEvents;
+  // Get actual RSVPd events
+  const rsvpdEventList = events.filter((event) =>
+    rsvpdEvents.some((rsvpEvent) => rsvpEvent.id === event.id)
+  );
+
+  // Show placeholders only if no RSVP yet
+  const displayedEvents =
+    rsvpdEventList.length > 0 ? rsvpdEventList : placeholderEvents;
 
   return (
-    <section className="created-events">
-      {displayEvents.map((event, index) => (
-        <div className="created-events-d" key={index}>
-          <div className="ce-img-container">
-            <img className="ce-img" alt="event" src={event.eventImage} />
+    <section className="rsvpd-events">
+      {displayedEvents.map((event, index) => (
+        <div className="rsvpd-events-d" key={index}>
+          <div className="rsvpd-img-container">
+            <img className="rsvpd-img" alt="event" src={event.eventImage} />
           </div>
-          <div className="ce-main">
-            <div className="ce-title">
+          <div className="rsvpd-main">
+            <div className="rsvpd-title">
               <h2>{event.title}</h2>
               <h3>{event.subtitle}</h3>
             </div>
@@ -50,8 +57,8 @@ function CreatedEvents() {
                 {event.price}
               </span>
             </div>
-            <div className="ce-btn">
-              <Button className="ce-btn1">View Details</Button>
+            <div className="rsvpd-btn">
+              <Button className="rsvpd-btn1">View Details</Button>
             </div>
           </div>
         </div>
@@ -60,4 +67,4 @@ function CreatedEvents() {
   );
 }
 
-export default CreatedEvents;
+export default RsvpdEvents;

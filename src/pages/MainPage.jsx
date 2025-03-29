@@ -1,12 +1,17 @@
 import React, { useEffect, useState } from "react";
+import "../pages/UserDashboard.css";
 import Header from "../components/Header";
+import "./MainPage.CSS";
+import Footer from "../components/Footer";
 
-import "./MainPage.css";
 import LoaderFullPage from "../components/LoaderFullPage";
-import UserForm from "../components/UserInfo";
+import Button from "../components/Button";
+import EventsNearYou from "../components/EventsNearYou";
+import UsersNearYou from "../components/UsersNearYou";
+import Hobbies from "../components/Hobbies";
 
-function MainPage() {
-  const [isLoading, setIsLoading] = useState(true);
+const UserDashboard = () => {
+  const [isLoading, setIsLoading] = useState(true); //used for delay rendering to display loader
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -16,13 +21,23 @@ function MainPage() {
   }, []);
 
   if (isLoading) {
-    return <LoaderFullPage />;
+    return (
+      <div>
+        <Header className="user-header" />
+        <LoaderFullPage />
+      </div>
+    );
   }
+
   return (
-    <div>
-      <Header />;
+    <div className="user-d-page">
+      <Header className="user-header" />
+      <EventsNearYou />
+      <UsersNearYou />
+      <Hobbies />
+      <Footer />
     </div>
   );
-}
+};
 
-export default MainPage;
+export default UserDashboard;

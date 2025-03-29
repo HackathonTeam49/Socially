@@ -112,7 +112,7 @@ export default function Login() {
               </div>
             </div>
             <div className="login-remember-me">
-              <input type="checkbox" id="remember-me" required />
+              <input type="checkbox" id="remember-me" />
               <label htmlFor="remember-me">Remember me</label>
             </div>
             <Button type="regular" className="login-signup-button">

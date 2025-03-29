@@ -1,0 +1,229 @@
+section.events-ny {
+  padding: 140px 0px 70px 0px;
+}
+section .e-w {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section.events-ny h1,
+section.events-ny .ce-p {
+  text-align: center;
+}
+
+section.events-ny h1 {
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 100%;
+  letter-spacing: 0;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+section .ny-title {
+  width: 80%;
+}
+section.events-ny h2 {
+  font-family: Merriweather;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 6%;
+  margin-bottom: 8px;
+}
+
+section.events-ny h3 {
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+section.events-ny .ce-p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #666666;
+  max-width: 41%;
+}
+
+section .events-slider-ny {
+  margin-top: 40px;
+}
+section.events-ny .container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  row-gap: 30px;
+}
+
+section .events-details-ny {
+  padding-left: 27px;
+  flex-basis: 49%;
+  gap: 40px;
+  display: flex;
+  align-items: center;
+  background-color: #0033660a;
+}
+
+section .ny-main p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+section .eny-dt {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: 15px;
+}
+
+section span.eny-tdm {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  font-family: Merriweather;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+section span img {
+  margin-top: -3px;
+}
+
+section .eny-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  width: 80%;
+}
+
+section Button.eny-btn1 {
+  width: 84px;
+  height: 34px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: var(--blue-color);
+  color: var(--background-color);
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 9px 25px 9px 25px;
+}
+section Button.eny-btn1:active {
+  background-color: var(--blue-color);
+  color: var(--background-color);
+}
+
+section Button.eny-btn2 {
+  width: 127px;
+  height: 34px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.hovered {
+  background-color: var(--background-color) !important;
+  color: var(--black-color) !important;
+  border: 1px solid var(--blue-color) !important;
+}
+/* }
+.clicked{
+  background-color: var(--blue-color) !important;
+  color: var(--background-color) !important;
+  border: none !important;
+}  */
+section .ny-main {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  gap: 20px;
+}
+@media (max-width: 480px) {
+  section.events-ny h1 {
+    font-size: 20px;
+
+    text-align: center;
+  }
+
+  section.events-ny .ce-p {
+    font-family: Roboto;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #666666;
+    max-width: 80%;
+  }
+
+  section.events-ny {
+    padding: 120px 0px;
+  }
+  section .events-details-ny {
+    flex-direction: column-reverse;
+    padding-left: 0px;
+    flex-basis: 100%;
+    gap: 20px;
+  }
+
+  /* section .ny-main {
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+
+    padding: 0px 20px;
+  } */
+
+  /* section.events-ny .container {
+    max-width: 100%;
+  } */
+  /* padding: 20px 0px; */
+
+  section .ny-main {
+    display: flex;
+    padding: 0px 25px 25px 25px;
+
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+  }
+  .event-img {
+    width: 100%;
+    height: 250px;
+  }
+  section.events-ny .container {
+    display: grid;
+    grid-template-rows: repeat(2, 496px); /* Two rows, each 476px tall */
+    grid-template-columns: repeat(2, 100%); /* Two columns, each full width */
+    grid-auto-columns: 100%; /* Additional columns for remaining divs */
+    grid-auto-flow: column; /* Places divs in columns, stacking vertically within each */
+    overflow-x: auto; /* Enables horizontal scrolling */
+    overflow-y: hidden; /* Prevents vertical scrolling */
+    max-width: 100%; /* Fits the viewport */
+    height: 1022px; /* Height to show two stacked divs (2 × 476px) */
+    padding: 0 10px; /* Optional: padding for spacing */
+    gap: 50px; /* Space between columns */
+  }
+
+  section .events-details-ny {
+    width: 100%; /* Full width of each grid cell */
+    height: 496px; /* Fixed height for each div */
+    /* Optional: scroll within div if content overflows */
+  }
+}

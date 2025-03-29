@@ -76,7 +76,7 @@
 }
 
 .user-form {
-  max-width: 887px;
+  max-width: 1200px;
 }
 
 .form-row {
@@ -91,7 +91,7 @@
 }
 
 .form-group input.user-info-fn {
-  width: 210px;
+  width: 264px;
 }
 
 .user-form .form-group {
@@ -147,6 +147,11 @@
   margin-top: 1rem;
   width: 109px;
   height: 49px;
+}
+
+.user-info-class .loader-ud-page img.loader {
+  width: 14%;
+  margin-top: -260px;
 }
 
 @media (max-width: 480px) {
@@ -214,5 +219,9 @@
   .user-form .edit-btn {
     font-size: 16px !important;
     height: 41px;
+  }
+  .user-info-class .loader-ud-page img.loader {
+    width: 50%;
+    margin-top: -370px;
   }
 }

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
+import { NavLink, useNavigate, useLocation } from "react-router-dom";
 import logo from "../assets/logo.png";
 import icon from "../assets/user-icon.png";
 import user from "../assets/user.png";
@@ -53,10 +53,9 @@ const Header = () => {
         <div className={`nav-links ${showNavLinks ? "active" : ""}`}>
           <NavLink
             to="/app"
+            end
             className={({ isActive }) =>
-              location.pathname === "/app/dashboard"
-                ? "nav-item"
-                : isActive
+              location.pathname === "/" || isActive
                 ? "nav-item active"
                 : "nav-item"
             }
@@ -64,7 +63,8 @@ const Header = () => {
             Home
           </NavLink>
           <NavLink
-            to="/app/CreatedEvent"
+            to="/app/create-events"
+            end
             className={({ isActive }) =>
               isActive ? "nav-item active" : "nav-item"
             }
@@ -72,7 +72,8 @@ const Header = () => {
             Create Event
           </NavLink>
           <NavLink
-            to="/pages/YourHobbies"
+            to="/app/your-hubbies"
+            end
             className={({ isActive }) =>
               isActive ? "nav-item active" : "nav-item"
             }
@@ -80,7 +81,8 @@ const Header = () => {
             Your Hobbies
           </NavLink>
           <NavLink
-            to="/pages/News"
+            to="/app/news"
+            end
             className={({ isActive }) =>
               isActive ? "nav-item active" : "nav-item"
             }

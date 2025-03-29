@@ -1,0 +1,229 @@
+section.saved-events {
+  max-width: 96%;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  width: 100%;
+  gap: 40px;
+  /* position: relative;
+  left: 50%;
+  transform: translateX(-50%); */
+  column-gap: 0px;
+  max-height: 580px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  justify-items: center;
+  margin: 0 auto;
+}
+
+section.saved-events .saved-events-d {
+  position: relative;
+}
+
+section.saved-events .se-main {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  padding: 30px 40px 10px 40px;
+  max-width: 431px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  color: var(--black-color);
+}
+section.saved-events .se-title h2 {
+  font-family: Merriweather;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 6%;
+}
+section.saved-events .se-title h3 {
+  margin-top: 10px;
+  font-family: Merriweather;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+section.saved-events .se-main p {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #00000080;
+}
+section .saved-events-d img.se-img {
+  width: 100%;
+  opacity: 10%;
+}
+.se-img-container::before,
+.se-img-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 50px; /* Size of the circular cutout */
+  height: 50px;
+  background: white; /* Match the background of your page */
+  border-radius: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.se-img-container::before {
+  left: -25px; /* Half the width to position it on the edge */
+}
+
+.se-img-container::after {
+  right: -25px; /* Half the width to position it on the edge */
+}
+.se-img-container {
+  position: relative;
+  width: 100%; /* Adjust based on your layout */
+
+  overflow: hidden;
+  max-width: 431px;
+  height: 265px;
+}
+
+section.saved-events .se-dt {
+  display: flex;
+  flex-direction: row;
+  gap: 18px;
+  align-items: center;
+}
+
+section.saved-events .se-tdm {
+  font-family: Merriweather;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+section.saved-events .se-tdm img {
+  margin-top: -2px;
+}
+section.saved-events .se-btn1 {
+  width: 127px;
+  height: 34px;
+  border-radius: 5px;
+  padding: 9px 25px;
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  background-color: var(--blue-color);
+  color: var(--background-color);
+  gap: 10px;
+}
+
+.saved-events-class .sidebar {
+  max-height: 656px !important;
+  gap: 212px;
+}
+.saved-events-class .user-dashboard-container {
+  left: 0 !important;
+  transform: unset !important;
+}
+.saved-events-class .main-content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  justify-content: center;
+  padding: 20px 10px 20px 10px;
+  max-height: 656px;
+}
+@media (max-width: 480px) {
+  .saved-events-class .sidebar {
+    max-height: 656px !important;
+    gap: 110px;
+  }
+  .saved-events-class .user-dashboard-container {
+    left: 0 !important;
+    transform: unset !important;
+  }
+  section.saved-events .saved-events-d {
+    background-color: #0033660a;
+  }
+  section.saved-events {
+    max-width: 98%;
+    column-gap: 30px;
+    display: flex;
+    overflow-x: scroll;
+  }
+  .saved-events-class .main-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    justify-content: center;
+    padding: 20px 10px 20px 10px;
+    max-height: 482px;
+  }
+  .se-img-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    max-width: 431px;
+    height: auto;
+  }
+  section.saved-events .se-main {
+    position: static;
+    height: auto;
+    gap: 20px;
+    padding: 10px 20px 10px 20px;
+  }
+
+  section .saved-events-d img.se-img {
+    width: 335px;
+    opacity: unset;
+  }
+
+  section.saved-events .se-title h2 {
+    font-size: 12px;
+  }
+
+  section.saved-events .se-title h3 {
+    margin-top: 5px;
+    font-size: 18px;
+  }
+  section.saved-events .se-main p {
+    font-size: 14px;
+  }
+  section.saved-events .se-tdm {
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    gap: 3px;
+  }
+  section.saved-events .se-tdm img {
+    width: 15px;
+    height: 15px;
+  }
+  section.saved-events .se-dt {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  section.saved-events .se-btn1 {
+    width: 130px;
+    height: 37px;
+
+    font-size: 14px;
+  }
+}
