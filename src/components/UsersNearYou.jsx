@@ -12,7 +12,7 @@ function UsersNearYou() {
         </p>
       </div>
       <div className="container">
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img
@@ -25,7 +25,7 @@ function UsersNearYou() {
           <h3>William Smithson</h3>
         </div>
 
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img
@@ -38,7 +38,7 @@ function UsersNearYou() {
           <h3>William Smithson</h3>
         </div>
 
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img
@@ -51,7 +51,7 @@ function UsersNearYou() {
           <h3>William Smithson</h3>
         </div>
 
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img
@@ -64,7 +64,7 @@ function UsersNearYou() {
           <h3>William Smithson</h3>
         </div>
 
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img
@@ -77,7 +77,7 @@ function UsersNearYou() {
           <h3>William Smithson</h3>
         </div>
 
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img
@@ -90,7 +90,7 @@ function UsersNearYou() {
           <h3>William Smithson</h3>
         </div>
 
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img
@@ -103,7 +103,7 @@ function UsersNearYou() {
           <h3>William Smithson</h3>
         </div>
 
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img
@@ -116,7 +116,7 @@ function UsersNearYou() {
           <h3>William Smithson</h3>
         </div>
 
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img
@@ -129,7 +129,7 @@ function UsersNearYou() {
           <h3>William Smithson</h3>
         </div>
 
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img
@@ -142,7 +142,7 @@ function UsersNearYou() {
           <h3>William Smithson</h3>
         </div>
 
-        <div class="user-ny item">
+        <div className="user-ny item">
           <div className="user-ny-details">
             <img alt="dp-img" className="dp-img" src="/src/assets/dp.png" />
             <img

@@ -1,6 +1,5 @@
-import React from "react";
-
-import { createContext, useContext, useReducer } from "react";
+import PropTypes from "prop-types";
+import React, { createContext, useContext, useReducer } from "react";
 
 const AuthContext = createContext();
 
@@ -19,6 +18,7 @@ function reducer(state, action) {
       throw new Error("Unknown action");
   }
 }
+
 const FAKE_USER = {
   name: "Jack",
   email: "jack@example.com",
@@ -31,6 +31,7 @@ function AuthProvider({ children }) {
     reducer,
     initialState
   );
+
   function login(email, password) {
     if (email === FAKE_USER.email && password === FAKE_USER.password)
       dispatch({ type: "login", payload: FAKE_USER });
@@ -39,12 +40,18 @@ function AuthProvider({ children }) {
   function logout() {
     dispatch({ type: "logout" });
   }
+
   return (
     <AuthContext.Provider value={{ user, isAuthenticated, login, logout }}>
       {children}
     </AuthContext.Provider>
   );
 }
+
+// PropTypes validation for children prop
+AuthProvider.propTypes = {
+  children: PropTypes.node.isRequired, // `children` must be a valid React node
+};
 
 function useAuth() {
   const context = useContext(AuthContext);

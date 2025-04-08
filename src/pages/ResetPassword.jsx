@@ -54,7 +54,7 @@ export default function Login() {
           <p className="fg-ct">Please enter your new password</p>
 
           <form className="login-form">
-            <div class="password-section rp-p">
+            <div className="password-section rp-p">
               <div className="form-group password-group rp-fg">
                 <label htmlFor="password">Password</label>
                 <div className="password-input-container">
