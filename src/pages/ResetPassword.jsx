@@ -10,14 +10,14 @@ import "./ResetPassword.css";
 import { Link } from "react-router-dom";
 import LoaderFullPage from "../components/LoaderFullPage";
 
-export default function Login() {
+export default function  Login() {
   const [isLoading, setIsLoading] = useState(true);
   const [password, setPassword] = useState("qwerty for testing the icon..."); ///testing purposes please delete later
 
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 2000); // simulate a 2-second loading delay
+    }, 2000); 
     return () => clearTimeout(timer);
   }, []);
   const passwordInput1 = useRef(null);
